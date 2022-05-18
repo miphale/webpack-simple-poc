@@ -69,7 +69,6 @@ exports.search=function(form) {
 
     if(form["fullName"].checked) {
         console.log("full name search: "+form["countryName"].value);
-        let name = form["countryName"].value;
         window.webApi.country.fullname(
             form["countryName"].value,
             {
@@ -81,7 +80,8 @@ exports.search=function(form) {
                     window.feather.replace();
                 },
                 "error":function(code) {
-                    addError(code)
+                    console.log("Code: "+JSON.stringify(code));
+                    addError(code.message);
                 }
             }
         );
@@ -99,7 +99,7 @@ exports.search=function(form) {
                     window.feather.replace();
                 },
                 "error":function(code) {
-                    addError(code)
+                    addError(code);
                 }
             }
         );

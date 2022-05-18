@@ -10,7 +10,7 @@ window.countries = require("./countries");
 
 const WebApi = require("./wptapi");
 
-window.webApi = new WebApi.WebTheatricsRest(`https://restcountries.com/v3.1/`);
+window.webApi = new WebApi.WebTheatricsRest(`https://restcountries.com/v3.1`);
 
 var appDiv;
 var navDiv;
