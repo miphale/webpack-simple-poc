@@ -1,0 +1,31 @@
+{
+  "name": "webpack-theatrics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [
+    "webpack",
+    "rest",
+    "vanilla-router"
+  ],
+  "author": "Mogomotsi Phale",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@babel/register": "^7.10.5",
+    "bootstrap": "^4.5.0",
+    "feather-icons": "^4.28.0",
+    "handlebars": "^4.7.6",
+    "jquery": "^3.5.1",
+    "moment": "^2.27.0",
+    "msal": "^1.4.0",
+    "popper.js": "^1.16.1",
+    "vanilla-router": "^1.2.8"
+  }
+}

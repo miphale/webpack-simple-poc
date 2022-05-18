@@ -1,0 +1,49 @@
+<div class="container-fluid">
+    <h2 class="h2">Country Search</h2>
+    <form action="javascript:window.countries.search(this)">
+        <div class="form-group">
+            <label for="countryName">Name</label>
+            <input type="text" class="form-control" id="countryName" required data-valueMissing="Please enter a country name." />
+            <small id="countryNameHelp" class="form-text text-muted">Enter the name of the country to search for.</small>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="fullName" aria-describedby="fullNameHelp">
+            <label class="form-check-label" for="enabled">Full name</label>
+            <small id="fullNameHelp" class="form-text text-muted">If this is not selected the serch will be on partial name.</small>
+        </div>
+        <div id="countrySearchAlerts">
+        </div>
+        <button id="countrySearchButton" type="submit" class="btn btn-primary">Search</button>
+    </form>
+    <br />
+    {{#if movies}}
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Capital</th>
+            <th scope="col">Region</th>
+            <th scope="col">Population</th>
+        </tr>
+        </thead>
+        <tbody>
+            {{#each this.movies}}
+            <tr>
+                <td>
+                    {{name.common}}
+                </td>
+                <td>
+                    {{capital}}
+                </td>
+                <td>
+                    {{region}}
+                </td>
+                <td align="right">
+                    {{population}}
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    {{/if}}
+</div>
