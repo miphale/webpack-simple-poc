@@ -3,7 +3,7 @@
 This an 'I am bored and wanted to play around with javascript without going crazy' project. It's setup using bootstrap, vanilla router, handlebars. We are consuming the [countries rest api](https://restcountries.com)
 
 # Code guide
-1. wtpapi.js: This is where the calls to the countries api is made. I centralised the api calls just for control. It's geared to
+1. wtpapi.js: This is where the calls to the countries api are made. I centralised the api calls just for control.
 2. uihelper.js: all UI on the fly styling,form validations, formatting, etc are handled through here utilising handlebars helper register.
 3. index.js: page routing, api initialisation, template setup is handled here.
 
