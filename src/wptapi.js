@@ -28,8 +28,6 @@ var WebTheatricsRest = function(baseUrl) {
 		};
 		
 		xhttp.open("GET", _baseUrl+uri, true);
-		//xhttp.setRequestHeader("Content-type", "application/json");
-		//xhttp.send(JSON.stringify(request));
         xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhttp.send();
 	}

@@ -10,16 +10,6 @@ window.countries = require("./countries");
 
 const WebApi = require("./wptapi");
 
-/*
-if (location.hostname=="localhost"){
-    window.WebApi=new WebApi.WebTheatricsRest(`http://localhost:${port}`);
-} else {
-    window.WebApi=new WebApi.WebTheatricsRest(`https://${location.hostname}`);
-}*/
-
-// Movie API
-//window.WebApi = new WebApi.WebTheatricsRest(`http://www.omdbapi.com/?i=tt3896198&apikey=a6090695`);
-
 window.webApi = new WebApi.WebTheatricsRest(`https://restcountries.com/v3.1/`);
 
 var appDiv;
