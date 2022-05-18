@@ -31,6 +31,23 @@ var WebTheatricsRest = function(baseUrl) {
         xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhttp.send();
 	}
+
+	// Post call type. Not currently using it for countries API
+	this._MakeRestPostCall = function(uri,request,callback) {
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			 if (this.readyState == 4 && this.status == 200) {
+				 var response=JSON.parse(this.responseText);
+				 callback.success(response);
+			 }else if (this.readyState == 4 && this.status != 200){
+				 callback.error(this.status);
+			 }
+		};
+		
+		xhttp.open("POST", _baseUrl+uri, true);
+		xhttp.setRequestHeader("Content-type", "application/json");
+		xhttp.send(JSON.stringify(request));
+	}
 }
 
 exports.WebTheatricsRest = WebTheatricsRest;
