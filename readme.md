@@ -1,6 +1,6 @@
 # Simple webpack, bootstrap project
 
-This an 'I am bnored and wanted to playaroudn with javascript without going crazy' project. I setup using bootstrap, vanilla router, handlebars. Backend it's consuming the [countries rest api](https://restcountries.com)
+This an 'I am bored and wanted to play around with javascript without going crazy' project. It's setup using bootstrap, vanilla router, handlebars. We are consuming the [countries rest api](https://restcountries.com)
 
 # Code guide
 1. wtpapi.js: This is where the calls to the countries api is made. I centralised the api calls just for control. It's geared to
